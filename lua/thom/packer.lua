@@ -20,9 +20,18 @@ return require('packer').startup(function(use)
             	vim.cmd('colorscheme kanagawa')
         end
     })
+    --extra colorschemes
     use('EdenEast/nightfox.nvim')
     use{'catppuccin/nvim', as =  'catppuccin' }
     use('folke/tokyonight.nvim')
+    use('NLKNguyen/papercolor-theme')
+    use('nanotech/jellybeans.vim')
+    use('k4yt3x/ayu-vim-darker')
+    use('jaredgorski/spacecamp')
+    use('tomasiser/vim-code-dark')
+    use('tpope/vim-vividchalk')
+    use('gouch/vim-ballroom')
+
 
 	--Treesitter
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
