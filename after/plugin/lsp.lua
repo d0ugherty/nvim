@@ -5,7 +5,10 @@ lsp.preset("recommended")
 lsp.ensure_installed({
 	'clangd',
 	'pylsp',
+    'rust_analyzer',
 })
+
+
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}

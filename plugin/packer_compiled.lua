@@ -160,6 +160,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-codefmt"] = {
+    loaded = true,
+    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/vim-codefmt",
+    url = "https://github.com/goggle/vim-codefmt"
+  },
+  ["vim-glaive"] = {
+    loaded = true,
+    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/vim-glaive",
+    url = "https://github.com/google/vim-glaive"
+  },
+  ["vim-maktaba"] = {
+    loaded = true,
+    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/vim-maktaba",
+    url = "https://github.com/google/vim-maktaba"
   }
 }
 
