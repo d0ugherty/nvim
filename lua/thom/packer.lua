@@ -21,18 +21,7 @@ return require('packer').startup(function(use)
         end
     })
 
-    --[[require("transparent").setup({
-        groups = { -- table: default groups
-            'Normal', 'NormalNC', 'Comment', 'Constant', 'Special', 'Identifier',
-            'Statement', 'PreProc', 'Type', 'Underlined', 'Todo', 'String', 'Function',
-            'Conditional', 'Repeat', 'Operator', 'Structure', 'LineNr', 'NonText',
-            'SignColumn', 'CursorLineNr', 'EndOfBuffer',
-        },
-        extra_groups = {}, -- table: additional groups that should be cleared
-       exclude_groups = {}, -- table: groups you don't want to clear
-    })]]
-
-    --extra colorschemes
+        --extra colorschemes
     use('EdenEast/nightfox.nvim')
     use{'catppuccin/nvim', as =  'catppuccin' }
     use('folke/tokyonight.nvim')
@@ -44,10 +33,17 @@ return require('packer').startup(function(use)
     use('tpope/vim-vividchalk')
     use('gouch/vim-ballroom')
 
+    --discord presence (lol)
     use('vimsence/vimsence')
-	--Treesitter
+	
+    --Treesitter
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use('nvim-treesitter/playground')
+
+    --file tree
+    use('nvim-tree/nvim-tree.lua')
+    use('nvim-tree/nvim-web-devicons')
+
 	--etc
 	use('theprimeagen/harpoon')
 	use('mbbill/undotree')
