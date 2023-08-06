@@ -14,10 +14,10 @@ return require('packer').startup(function(use)
     }
 	--Colorscheme
     	use({
-        	'rebelot/kanagawa.nvim',
-        	as = 'kanagawa',
+        	'catppuccin/nvim',
+        	as = 'catppuccin',
         	config = function()
-            	vim.cmd('colorscheme kanagawa')
+            	vim.cmd('colorscheme catppuccin-mocha')
         end
     })
     --extra colorschemes
@@ -32,7 +32,7 @@ return require('packer').startup(function(use)
     use('tpope/vim-vividchalk')
     use('gouch/vim-ballroom')
 
-
+    use('vimsence/vimsence')
 	--Treesitter
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use('nvim-treesitter/playground')
