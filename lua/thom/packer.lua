@@ -14,12 +14,24 @@ return require('packer').startup(function(use)
     }
 	--Colorscheme
     	use({
-        	'catppuccin/nvim',
-        	as = 'catppuccin',
+        	'nanotech/jellybeans.nvim',
+        	as = 'jellybeans',
         	config = function()
-            	vim.cmd('colorscheme catppuccin-mocha')
+            	vim.cmd('colorscheme jellybeans')
         end
     })
+
+    --[[require("transparent").setup({
+        groups = { -- table: default groups
+            'Normal', 'NormalNC', 'Comment', 'Constant', 'Special', 'Identifier',
+            'Statement', 'PreProc', 'Type', 'Underlined', 'Todo', 'String', 'Function',
+            'Conditional', 'Repeat', 'Operator', 'Structure', 'LineNr', 'NonText',
+            'SignColumn', 'CursorLineNr', 'EndOfBuffer',
+        },
+        extra_groups = {}, -- table: additional groups that should be cleared
+       exclude_groups = {}, -- table: groups you don't want to clear
+    })]]
+
     --extra colorschemes
     use('EdenEast/nightfox.nvim')
     use{'catppuccin/nvim', as =  'catppuccin' }

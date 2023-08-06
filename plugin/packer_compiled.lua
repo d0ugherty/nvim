@@ -85,7 +85,6 @@ _G.packer_plugins = {
     url = "https://github.com/k4yt3x/ayu-vim-darker"
   },
   catppuccin = {
-    config = { "\27LJ\2\2@\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0!colorscheme catppuccin-mocha\bcmd\bvim\0" },
     loaded = true,
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
@@ -99,6 +98,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
+  },
+  jellybeans = {
+    config = { "\27LJ\2\2:\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\27colorscheme jellybeans\bcmd\bvim\0" },
+    loaded = true,
+    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/jellybeans",
+    url = "https://github.com/nanotech/jellybeans.nvim"
   },
   ["jellybeans.vim"] = {
     loaded = true,
@@ -229,10 +234,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: catppuccin
-time([[Config for catppuccin]], true)
-try_loadstring("\27LJ\2\2@\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0!colorscheme catppuccin-mocha\bcmd\bvim\0", "config", "catppuccin")
-time([[Config for catppuccin]], false)
+-- Config for: jellybeans
+time([[Config for jellybeans]], true)
+try_loadstring("\27LJ\2\2:\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\27colorscheme jellybeans\bcmd\bvim\0", "config", "jellybeans")
+time([[Config for jellybeans]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
