@@ -56,7 +56,7 @@ return require('packer').startup(function(use)
     use('google/vim-maktaba')
     use('google/vim-codefmt')
     use('google/vim-glaive')
-
+    use('sbdchd/neoformat')
 	--lsp
 	use {
 	  'VonHeikemen/lsp-zero.nvim',
