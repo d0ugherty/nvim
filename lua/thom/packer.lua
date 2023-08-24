@@ -14,10 +14,10 @@ return require('packer').startup(function(use)
     }
 	--Colorscheme
     	use({
-        	'nanotech/jellybeans.nvim',
-        	as = 'jellybeans',
+        	'folke/tokyonight.nvim',
+        	as = 'tokynight',
         	config = function()
-            	vim.cmd('colorscheme jellybeans')
+            	vim.cmd('colorscheme tokyonight-night')
         end
     })
 
@@ -26,7 +26,7 @@ return require('packer').startup(function(use)
     use{'catppuccin/nvim', as =  'catppuccin' }
     use('folke/tokyonight.nvim')
     use('NLKNguyen/papercolor-theme')
-    use('nanotech/jellybeans.vim')
+    use('d0ugherty/jellybeans.nvim')
     use('k4yt3x/ayu-vim-darker')
     use('jaredgorski/spacecamp')
     use('tomasiser/vim-code-dark')
@@ -56,7 +56,7 @@ return require('packer').startup(function(use)
     use('google/vim-maktaba')
     use('google/vim-codefmt')
     use('google/vim-glaive')
-
+    use('jiangmiao/auto-pairs')
 	--lsp
 	use {
 	  'VonHeikemen/lsp-zero.nvim',

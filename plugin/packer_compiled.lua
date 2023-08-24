@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["auto-pairs"] = {
+    loaded = true,
+    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/auto-pairs",
+    url = "https://github.com/jiangmiao/auto-pairs"
+  },
   ["ayu-vim-darker"] = {
     loaded = true,
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/ayu-vim-darker",
@@ -99,16 +104,10 @@ _G.packer_plugins = {
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
-  jellybeans = {
-    config = { "\27LJ\2\2:\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\27colorscheme jellybeans\bcmd\bvim\0" },
+  ["jellybeans.nvim"] = {
     loaded = true,
-    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/jellybeans",
-    url = "https://github.com/nanotech/jellybeans.nvim"
-  },
-  ["jellybeans.vim"] = {
-    loaded = true,
-    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/jellybeans.vim",
-    url = "https://github.com/nanotech/jellybeans.vim"
+    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/jellybeans.nvim",
+    url = "https://github.com/d0ugherty/jellybeans.nvim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -190,6 +189,12 @@ _G.packer_plugins = {
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  tokynight = {
+    config = { "\27LJ\2\2@\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0!colorscheme tokyonight-night\bcmd\bvim\0" },
+    loaded = true,
+    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/tokynight",
+    url = "https://github.com/folke/tokyonight.nvim"
+  },
   ["tokyonight.nvim"] = {
     loaded = true,
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
@@ -238,10 +243,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: jellybeans
-time([[Config for jellybeans]], true)
-try_loadstring("\27LJ\2\2:\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\27colorscheme jellybeans\bcmd\bvim\0", "config", "jellybeans")
-time([[Config for jellybeans]], false)
+-- Config for: tokynight
+time([[Config for tokynight]], true)
+try_loadstring("\27LJ\2\2@\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0!colorscheme tokyonight-night\bcmd\bvim\0", "config", "tokynight")
+time([[Config for tokynight]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
