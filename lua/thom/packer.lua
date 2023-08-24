@@ -14,10 +14,10 @@ return require('packer').startup(function(use)
     }
 	--Colorscheme
     	use({
-        	'folke/tokyonight.nvim',
-        	as = 'tokynight',
+        	'catppuccin/nvim',
+        	as = 'catppuccin',
         	config = function()
-            	vim.cmd('colorscheme tokyonight-night')
+            	vim.cmd('colorscheme catppuccin-mocha')
         end
     })
 
@@ -56,7 +56,7 @@ return require('packer').startup(function(use)
     use('google/vim-maktaba')
     use('google/vim-codefmt')
     use('google/vim-glaive')
-    use('jiangmiao/auto-pairs')
+    use('sbdchd/neoformat')
 	--lsp
 	use {
 	  'VonHeikemen/lsp-zero.nvim',
