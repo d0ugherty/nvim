@@ -14,10 +14,10 @@ return require('packer').startup(function(use)
     }
 	--Colorscheme
     	use({
-        	'nanotech/jellybeans.nvim',
-        	as = 'jellybeans',
+        	'catppuccin/nvim',
+        	as = 'catppuccin',
         	config = function()
-            	vim.cmd('colorscheme jellybeans')
+            	vim.cmd('colorscheme catppuccin-mocha')
         end
     })
 
@@ -26,7 +26,7 @@ return require('packer').startup(function(use)
     use{'catppuccin/nvim', as =  'catppuccin' }
     use('folke/tokyonight.nvim')
     use('NLKNguyen/papercolor-theme')
-    use('nanotech/jellybeans.vim')
+--    use('d0ugherty/jellybeans.vim')
     use('k4yt3x/ayu-vim-darker')
     use('jaredgorski/spacecamp')
     use('tomasiser/vim-code-dark')
