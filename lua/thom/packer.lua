@@ -13,20 +13,13 @@ return require('packer').startup(function(use)
   	    requires = { {'nvim-lua/plenary.nvim'} }
     }
 	--Colorscheme
-    	use({
-        	'catppuccin/nvim',
-        	as = 'catppuccin',
-        	config = function()
-            	vim.cmd('colorscheme catppuccin-mocha')
-        end
-    })
-
+   
         --extra colorschemes
     use('EdenEast/nightfox.nvim')
-    use{'catppuccin/nvim', as =  'catppuccin' }
+    use{'rose-pine/neovim', as = 'rose-pine' }
     use('folke/tokyonight.nvim')
     use('NLKNguyen/papercolor-theme')
---    use('d0ugherty/jellybeans.vim')
+
     use('k4yt3x/ayu-vim-darker')
     use('jaredgorski/spacecamp')
     use('tomasiser/vim-code-dark')
