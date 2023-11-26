@@ -8,6 +8,20 @@ lsp.ensure_installed({
     'rust_analyzer',
 })
 
+lsp_zero.configure('pylsp', {
+  settings = {
+    pylsp = {
+      plugins = {
+        pycodestyle = {
+          ignore = {'E*', 'W*'},  -- Ignore formatting warnings
+        },
+        pyflakes = {
+          enabled = false,
+        },
+      },
+    },
+  },
+})
 
 
 local cmp = require('cmp')
