@@ -6,8 +6,24 @@ lsp.ensure_installed({
 	'clangd',
 	'pylsp',
     'rust_analyzer',
+    'java_language_server',
+    'tsserver'
 })
 
+lsp_zero.configure('pylsp', {
+  settings = {
+    pylsp = {
+      plugins = {
+        pycodestyle = {
+          ignore = {'E*', 'W*'},  -- Ignore formatting warnings
+        },
+        pyflakes = {
+          enabled = false,
+        },
+      },
+    },
+  },
+})
 
 
 local cmp = require('cmp')
