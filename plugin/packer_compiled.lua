@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  autoclose = {
+    loaded = true,
+    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/autoclose",
+    url = "https://github.com/m4xshen/autoclose.nvim"
+  },
   ["ayu-vim-darker"] = {
     loaded = true,
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/ayu-vim-darker",
@@ -89,16 +94,15 @@ _G.packer_plugins = {
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  flake8 = {
+    loaded = true,
+    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/flake8",
+    url = "https://github.com/PyCQA/flake8"
+  },
   harpoon = {
     loaded = true,
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
-  },
-  ["jellybeans-nvim"] = {
-    config = { "\27LJ\2\n˜\1\0\0\6\0\n\0\0166\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\5\0005\4\6\0006\5\a\0=\5\b\0046\5\a\0=\5\t\4B\0\4\1K\0\1\0\fctermbg\nguibg\tNONE\1\0\0\vNormal\16nvim_set_hl\bapi colorscheme jellybeans-nvim\bcmd\bvim\0" },
-    loaded = true,
-    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/jellybeans-nvim",
-    url = "https://github.com/metalelf0/jellybeans-nvim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -109,11 +113,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
-  ["lush.nvim"] = {
-    loaded = true,
-    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/lush.nvim",
-    url = "https://github.com/rktjmp/lush.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -134,6 +133,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/neoformat",
     url = "https://github.com/sbdchd/neoformat"
+  },
+  nightfly = {
+    loaded = true,
+    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/nightfly",
+    url = "https://github.com/bluz71/vim-nightfly-colors"
   },
   ["nightfox.nvim"] = {
     loaded = true,
@@ -165,6 +169,11 @@ _G.packer_plugins = {
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  onedarkpro = {
+    loaded = true,
+    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/onedarkpro",
+    url = "https://github.com/olimorris/onedarkpro.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -190,6 +199,11 @@ _G.packer_plugins = {
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/pop-punk.vim",
     url = "https://github.com/bignimbus/pop-punk.vim"
   },
+  rope = {
+    loaded = true,
+    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/rope",
+    url = "https://github.com/python-rope/rope"
+  },
   ["rose-pine"] = {
     loaded = true,
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/rose-pine",
@@ -205,9 +219,9 @@ _G.packer_plugins = {
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["tokyonight.nvim"] = {
+  tokyonight = {
     loaded = true,
-    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/tokyonight",
     url = "https://github.com/folke/tokyonight.nvim"
   },
   undotree = {
@@ -258,10 +272,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: jellybeans-nvim
-time([[Config for jellybeans-nvim]], true)
-try_loadstring("\27LJ\2\n˜\1\0\0\6\0\n\0\0166\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\2\0\0'\3\5\0005\4\6\0006\5\a\0=\5\b\0046\5\a\0=\5\t\4B\0\4\1K\0\1\0\fctermbg\nguibg\tNONE\1\0\0\vNormal\16nvim_set_hl\bapi colorscheme jellybeans-nvim\bcmd\bvim\0", "config", "jellybeans-nvim")
-time([[Config for jellybeans-nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
