@@ -18,7 +18,6 @@ return require('packer').startup(function(use)
 
  
         --extra colorschemes
-    use{'rose-pine/neovim', as = 'rose-pine' }
     --use('haishanh/night-owl.vim')
     --[==[use({ "miikanissi/modus-themes.nvim",
 			as = 'modus',
@@ -26,7 +25,7 @@ return require('packer').startup(function(use)
 					vim.cmd('colorscheme modus')
 					vim.api.nvim_set_hl(0, 'Normal', { guibg=NONE, ctermbg=NONE })
 				end})
-	--[==[use({'cseelus/vim-colors-lucid',
+-- 	--[==[use({'cseelus/vim-colors-lucid',
 		as = 'lucid',
 			config = function()
 				vim.cmd('colorscheme lucid')
@@ -55,7 +54,8 @@ return require('packer').startup(function(use)
 			vim.api.nvim_set_hl(0, 'Normal', { guibg=NONE, ctermbg=NONE })
 		end
 		})]==]--
-	--use('k4yt3x/ayu-vim-darker')
+	use{'olimorris/onedarkpro.nvim', as = 'onedarkpro'}
+	use{'bluz71/vim-nightfly-colors', as = 'nightfly'}
 	use({ "miikanissi/modus-themes.nvim"})
     use('EdenEast/nightfox.nvim')
     use{'rose-pine/neovim', as = 'rose-pine' }
@@ -92,6 +92,9 @@ return require('packer').startup(function(use)
     use('google/vim-codefmt')
     use('google/vim-glaive')
     use('sbdchd/neoformat')
+
+    --auto close
+    use{'m4xshen/autoclose.nvim', as = 'autoclose'}
 	--lsp
 	use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -100,8 +103,9 @@ return require('packer').startup(function(use)
 	    -- LSP Support
 	    {'neovim/nvim-lspconfig'},             -- Required
 	    {'williamboman/mason.nvim'},           -- Optional
-	    {'williamboman/mason-lspconfig.nvim'}, -- Optional
-
+	    {'williamboman/mason-lspconfig.nvim'},
+	    {'python-rope/rope'}, -- Optional
+		{'PyCQA/flake8'},
 	    -- Autocompletion
 	    {'hrsh7th/nvim-cmp'},     -- Required
 	    {'hrsh7th/cmp-nvim-lsp'}, -- Required

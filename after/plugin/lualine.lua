@@ -16,3 +16,5 @@ require('lualine').setup {
       tabline = 1000,
       winbar = 1000,
     }
+  }
+}
