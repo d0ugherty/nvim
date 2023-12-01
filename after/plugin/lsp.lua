@@ -14,13 +14,11 @@ lsp.configure('pylsp', {
     pylsp = {
       plugins = {
         pycodestyle = {
-			enabled = true,
-			ignore = {"E*"}
+			enabled = true;
 			-- Ignore formatting warnings
         },
         flake8 = {
-			enabled = true,
-			ignore = {"E*"}
+			enabled = true;
 			-- Ignore formatting warnings
         },
         rope = {

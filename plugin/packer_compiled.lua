@@ -222,7 +222,7 @@ _G.packer_plugins = {
   tokyonight = {
     loaded = true,
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/tokyonight",
-    url = "https://github.com/folke/tokyonight.nvim"
+    url = "https://github.com/d0ugherty/tokyonight.nvim"
   },
   undotree = {
     loaded = true,

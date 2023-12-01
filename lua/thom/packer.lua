@@ -59,7 +59,7 @@ return require('packer').startup(function(use)
 	use({ "miikanissi/modus-themes.nvim"})
     use('EdenEast/nightfox.nvim')
     use{'rose-pine/neovim', as = 'rose-pine' }
-    use{'folke/tokyonight.nvim', as = 'tokyonight'}
+    use{'d0ugherty/tokyonight.nvim', as = 'tokyonight'}
     use('NLKNguyen/papercolor-theme')
     use('agude/vim-eldar')
     use('k4yt3x/ayu-vim-darker')
