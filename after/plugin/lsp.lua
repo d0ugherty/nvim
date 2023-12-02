@@ -4,12 +4,12 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
     'clangd',
-    'pylsp',
+    'pyright',
     'rust_analyzer'
 })
-
+require'lspconfig'.pyright.setup{}
 -- Configure Python LSP ('pylsp')
-lsp.configure('pylsp', {
+--[==[lsp.configure('pylsp', {
   settings = {
     pylsp = {
       plugins = {
@@ -28,7 +28,7 @@ lsp.configure('pylsp', {
     },
   }
   }
-)
+)]==]--
 
 -- CMP (Autocompletion) setup
 local cmp = require('cmp')

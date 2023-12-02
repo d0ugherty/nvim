@@ -69,7 +69,8 @@ return require('packer').startup(function(use)
     use('gouch/vim-ballroom')
 	use({'bignimbus/pop-punk.vim'})
     --discord presence (lol)
-    use('vimsence/vimsence')
+    --use('vimsence/vimsence')
+    use('andweeb/presence.nvim')
 
     --Treesitter
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -96,7 +97,8 @@ return require('packer').startup(function(use)
     --auto close
     use{'m4xshen/autoclose.nvim', as = 'autoclose'}
 	--lsp
-	use {
+	use {'neoclide/coc.nvim', branch = 'release'}
+	--[==[use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v2.x',
 	  requires = {
@@ -111,5 +113,5 @@ return require('packer').startup(function(use)
 	    {'hrsh7th/cmp-nvim-lsp'}, -- Required
 	    {'L3MON4D3/LuaSnip'},     -- Required
 	  }
-	}
+	}]==]--
 end)
