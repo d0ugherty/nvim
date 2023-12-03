@@ -60,6 +60,7 @@ return require('packer').startup(function(use)
     use('EdenEast/nightfox.nvim')
     use{'rose-pine/neovim', as = 'rose-pine' }
     use{'d0ugherty/tokyonight.nvim', as = 'tokyonight'}
+	--use{'folke/tokyonight.nvim', as = 'tokyonight'}
     use('NLKNguyen/papercolor-theme')
     use('agude/vim-eldar')
     use('k4yt3x/ayu-vim-darker')
@@ -98,7 +99,7 @@ return require('packer').startup(function(use)
     use{'m4xshen/autoclose.nvim', as = 'autoclose'}
 	--lsp
 	use {'neoclide/coc.nvim', branch = 'release'}
-	--[==[use {
+	use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v2.x',
 	  requires = {
@@ -113,5 +114,5 @@ return require('packer').startup(function(use)
 	    {'hrsh7th/cmp-nvim-lsp'}, -- Required
 	    {'L3MON4D3/LuaSnip'},     -- Required
 	  }
-	}]==]--
+	}
 end)
