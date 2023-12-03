@@ -27,5 +27,8 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
-vim.opt.formatprg = "astyle"
+
 vim.opt.colorcolumn = ""
+--vim.cmd 'colorscheme pop-punk'
+vim.api.nvim_set_hl(0, 'Normal', { guibg=NONE, ctermbg=NONE })
+vim.api.nvim_set_option("clipboard","unnamed")
