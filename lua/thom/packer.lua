@@ -71,7 +71,7 @@ return require('packer').startup(function(use)
 	use({'bignimbus/pop-punk.vim'})
     --discord presence (lol)
     --use('vimsence/vimsence')
-    use('andweeb/presence.nvim')
+    --use('andweeb/presence.nvim')
 
     --Treesitter
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})

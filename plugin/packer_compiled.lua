@@ -204,11 +204,6 @@ _G.packer_plugins = {
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/pop-punk.vim",
     url = "https://github.com/bignimbus/pop-punk.vim"
   },
-  ["presence.nvim"] = {
-    loaded = true,
-    path = "/home/thomas/.local/share/nvim/site/pack/packer/start/presence.nvim",
-    url = "https://github.com/andweeb/presence.nvim"
-  },
   rope = {
     loaded = true,
     path = "/home/thomas/.local/share/nvim/site/pack/packer/start/rope",
